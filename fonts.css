@@ -1,0 +1,121 @@
+/* ChronicaPro Font Faces */
+
+/* ChronicaPro Thin */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Thin.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro UltraLight */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-UltraLight.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Light */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Light.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Regular */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Regular.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Medium */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Medium.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Bold */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Bold.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Bold Italic */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-BoldIt.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-BoldIt.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ChronicaPro Heavy */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Heavy.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Black */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaPro-Black.woff2') format('woff2'),
+         url('./fonts/ChronicaPro-Black.woff') format('woff');
+    font-weight: 950;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ChronicaPro Black Italic */
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('./fonts/ChronicaProBlackIt.woff2') format('woff2'),
+         url('./fonts/ChronicaProBlackIt.woff') format('woff');
+    font-weight: 950;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SundayVacayPersonal */
+@font-face {
+    font-family: 'SundayVacayPersonal';
+    src: url('./fonts/SundayVacayPersonal.woff2') format('woff2'),
+         url('./fonts/SundayVacayPersonal.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Calibri Regular */
+@font-face {
+    font-family: 'Calibri';
+    src: url('./fonts/Calibri.woff2') format('woff2'),
+         url('./fonts/Calibri.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

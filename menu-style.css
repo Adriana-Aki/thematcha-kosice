@@ -1,0 +1,186 @@
+/* ============================================
+   Menu Page Styles
+   ============================================ */
+
+:root {
+    --primary-green: #286E37;
+    --primary-black: #000000;
+    --light-bg: #f9f9f9;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    --border-light: #eeeeee;
+    --transition: all 0.3s ease;
+}
+
+/* Menu Hero Section */
+.menu-hero {
+    background: linear-gradient(135deg, rgba(40, 110, 55, 0.1) 0%, rgba(40, 110, 55, 0.05) 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-green);
+}
+
+.menu-title {
+    font-family: 'SundayVacayPersonal', sans-serif;
+    font-size: 3.5rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.menu-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+/* Menu Favorites Section */
+.menu-favorites {
+    padding: 4rem 2rem;
+    background-color: var(--white);
+}
+
+/* Full Menu Section */
+.full-menu {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(40, 110, 55, 0.1) 0%, rgba(40, 110, 55, 0.15) 100%);
+}
+
+.menu-category {
+    margin-bottom: 4rem;
+}
+
+.category-title {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--primary-green);
+    font-family: 'ChronicaPro', sans-serif;
+    font-weight: 700;
+}
+
+.menu-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-green);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(40, 110, 55, 0.15);
+}
+
+.menu-item h3 {
+    font-family: 'ChronicaPro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.menu-description {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.menu-price {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    background-color: rgba(40, 110, 55, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+/* Logo Link */
+.logo-link {
+    text-decoration: none;
+}
+
+/* ============================================
+   Responsive Design for Menu Page
+   ============================================ */
+
+@media (max-width: 768px) {
+    .menu-title {
+        font-size: 2.5rem;
+    }
+
+    .menu-subtitle {
+        font-size: 1rem;
+    }
+
+    .menu-items-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .menu-item {
+        padding: 1.5rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-hero {
+        padding: 2rem 1rem;
+    }
+
+    .menu-title {
+        font-size: 2rem;
+    }
+
+    .menu-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .full-menu {
+        padding: 2rem 1rem;
+    }
+
+    .menu-category {
+        margin-bottom: 2.5rem;
+    }
+
+    .menu-items-grid {
+        gap: 1.5rem;
+    }
+
+    .menu-item {
+        padding: 1rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .menu-description {
+        font-size: 0.85rem;
+    }
+
+    .menu-price {
+        font-size: 1.1rem;
+    }
+}

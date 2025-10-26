@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Sunday Vacay Personal Use Only';
+    src: url('SundayVacayPersonal.woff2') format('woff2'),
+        url('SundayVacayPersonal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Black.woff2') format('woff2'),
+        url('ChronicaPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro-BoldIt';
+    src: url('ChronicaPro-BoldIt.woff2') format('woff2'),
+        url('ChronicaPro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Bold.woff2') format('woff2'),
+        url('ChronicaPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Heavy.woff2') format('woff2'),
+        url('ChronicaPro-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Light.woff2') format('woff2'),
+        url('ChronicaPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Medium.woff2') format('woff2'),
+        url('ChronicaPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Regular.woff2') format('woff2'),
+        url('ChronicaPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-Thin.woff2') format('woff2'),
+        url('ChronicaPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaPro';
+    src: url('ChronicaPro-UltraLight.woff2') format('woff2'),
+        url('ChronicaPro-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProBlackIt';
+    src: url('ChronicaProBlackIt.woff2') format('woff2'),
+        url('ChronicaProBlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProBookIt';
+    src: url('ChronicaProBookIt.woff2') format('woff2'),
+        url('ChronicaProBookIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProHeavyIt';
+    src: url('ChronicaProHeavyIt.woff2') format('woff2'),
+        url('ChronicaProHeavyIt.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProLightIt';
+    src: url('ChronicaProLightIt.woff2') format('woff2'),
+        url('ChronicaProLightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProMediumIt';
+    src: url('ChronicaProMediumIt.woff2') format('woff2'),
+        url('ChronicaProMediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProRegularIt';
+    src: url('ChronicaProRegularIt.woff2') format('woff2'),
+        url('ChronicaProRegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProThinIt';
+    src: url('ChronicaProThinIt.woff2') format('woff2'),
+        url('ChronicaProThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChronicaProUltraLightIt';
+    src: url('ChronicaProUltraLightIt.woff2') format('woff2'),
+        url('ChronicaProUltraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

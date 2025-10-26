@@ -3,46 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thematcha Kosice</title>
+    <title>The Matcha - Matcha Bar Kosice</title>
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Header -->
     <header>
-        <h1>Welcome to Thematcha Kosice</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">The <span class="logo-matcha">Matcha</span></span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to our website. This is the home section.</p>
-        </section>
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-content">
+                <div class="video-side">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline class="intro-video">
+                            <source src="Images/intro.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="logo-side">
+                    <img src="logo.svg" alt="The Matcha Logo" class="section-logo">
+                    <p class="logo-description">Welcome to The Matcha, Kosice's premier destination for authentic Japanese matcha tea. Our expert baristas craft each drink with precision and care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Learn more about us in this section.</p>
-        </section>
 
-        <section id="services">
-            <h2>Services</h2>
-            <p>Discover our services here.</p>
-        </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us.</p>
-        </section>
-    </main>
+    <!-- Popular Drinks Carousel Section -->
+    <section id="menu" class="popular-drinks">
+        <div class="container">
+            <h2 class="section-title">Our Most Popular Drinks</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous slide">❮</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="Images/fotky/1-4120.jpg" alt="Classic Matcha Latte">
+                            <h3><span class="matcha-brand">The Matcha</span> Classic Matcha Latte</h3>
+                            <p>Our signature drink - traditional matcha blended with steamed milk</p>
+                            <span class="price">€5.50</span>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/fotky/1-4121.jpg" alt="Iced Matcha">
+                            <h3><span class="matcha-brand">The Matcha</span> Iced Matcha Refresher</h3>
+                            <p>Perfect for warm days - crisp and invigorating</p>
+                            <span class="price">€5.50</span>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/fotky/1-4122.jpg" alt="Matcha Smoothie">
+                            <h3><span class="matcha-brand">The Matcha</span> Green Smoothie Power</h3>
+                            <p>Matcha blended with banana, spinach, and almond milk</p>
+                            <span class="price">€6.50</span>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/fotky/1-4123.jpg" alt="Matcha White Chocolate">
+                            <h3><span class="matcha-brand">The Matcha</span> White Chocolate</h3>
+                            <p>Sweet and creamy - matcha meets premium white chocolate</p>
+                            <span class="price">€6.00</span>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/fotky/1-4124.jpg" alt="Matcha Cheesecake Latte">
+                            <h3><span class="matcha-brand">The Matcha</span> Cheesecake Latte</h3>
+                            <p>Indulgent blend with cream cheese and vanilla notes</p>
+                            <span class="price">€6.50</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next slide">❯</button>
+            </div>
+            <div class="menu-header">
+                <a href="menu.html" class="btn-view-menu">View Whole Menu</a>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Thematcha Kosice. All rights reserved.</p>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4110.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4111.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4112.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4113.jpg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4114.jpg" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4115.jpg" alt="Gallery Image 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4116.jpg" alt="Gallery Image 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/fotky/1-4117.jpg" alt="Gallery Image 8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday: 08:30 - 18:30</p>
+                    <p>Tuesday: 08:30 - 18:30</p>
+                    <p>Wednesday: 08:30 - 18:30</p>
+                    <p>Thursday: 08:30 - 18:30</p>
+                    <p>Friday: 08:30 - 18:30</p>
+                    <p>Saturday: 09:00 - 19:00</p>
+                    <p>Sunday: 09:00 - 19:00</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Find Us Online</h3>
+                    <div class="social-links">
+                        <div class="social-row">
+                            <a href="https://www.instagram.com/thematcha.kosice/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 3C5.243 3 3 5.243 3 8V16C3 18.757 5.243 21 8 21H16C18.757 21 21 18.757 21 16V8C21 5.243 18.757 3 16 3H8ZM8 5H16C17.654 5 19 6.346 19 8V16C19 17.654 17.654 19 16 19H8C6.346 19 5 17.654 5 16V8C5 6.346 6.346 5 8 5ZM17 6C16.7348 6 16.4804 6.10536 16.2929 6.29289C16.1054 6.48043 16 6.73478 16 7C16 7.26522 16.1054 7.51957 16.2929 7.70711C16.4804 7.89464 16.7348 8 17 8C17.2652 8 17.5196 7.89464 17.7071 7.70711C17.8946 7.51957 18 7.26522 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM12 7C9.243 7 7 9.243 7 12C7 14.757 9.243 17 12 17C14.757 17 17 14.757 17 12C17 9.243 14.757 7 12 7ZM12 9C13.654 9 15 10.346 15 12C15 13.654 13.654 15 12 15C10.346 15 9 13.654 9 12C9 10.346 10.346 9 12 9Z" fill="currentColor"/></svg>
+                            </a>
+                            <a href="https://www.facebook.com/thematcha.kosice/" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.489 2 2 6.489 2 12C2 17.511 6.489 22 12 22C17.511 22 22 17.511 22 12C22 6.489 17.511 2 12 2ZM12 4C16.4301 4 20 7.56988 20 12C20 16.0145 17.0653 19.313 13.2188 19.8984V14.3848H15.5469L15.9121 12.0195H13.2188V10.7266C13.2188 9.74356 13.539 8.87109 14.459 8.87109H15.9355V6.80664C15.6755 6.77164 15.1268 6.69531 14.0898 6.69531C11.9238 6.69531 10.6543 7.83931 10.6543 10.4453V12.0195H8.42773V14.3848H10.6543V19.8789C6.87029 19.2408 4 15.9702 4 12C4 7.56988 7.56988 4 12 4Z" fill="currentColor"/></svg>
+                            </a>
+                            <a href="https://maps.app.goo.gl/QRyMjVUVRvGGdwBV9" class="social-icon" title="Google" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21.915 10.752L21.697 9H17.304L20.278 6.026L18.73 4.615C16.88 2.929 14.49 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 11.61 21.973 11.214 21.915 10.752ZM12 20C7.582 20 4 16.418 4 12C4 7.582 7.582 4 12 4C14.076 4 15.96 4.797 17.382 6.093L15.248 8.227C14.372 7.473 13.247 7 12 7C9.239 7 7 9.239 7 12C7 14.761 9.239 17 12 17C14.049 17 15.806 15.764 16.578 14H13V11H19.931C19.972 11.328 20 11.661 20 12C20 16.418 16.418 20 12 20ZM11 9.171V11V14V14.829C9.836 14.416 9 13.304 9 12C9 10.696 9.836 9.584 11 9.171Z" fill="currentColor"/></svg>
+                            </a>
+                        </div>
+                        <div class="social-row">
+                            <a href="https://wolt.com/sk/svk/kosice/restaurant/the-matcha?srsltid=AfmBOoqLKnnon33xn5R_0N4bTftEiI5nrGqeON_aRZxNZMsdW_S9ouZu" class="social-icon-logo" title="Wolt Food" target="_blank" rel="noopener noreferrer">
+                                <img src="Images/wolt_logos.svg" alt="Wolt Logo" class="wolt-logo" width="50" height="50">
+                            </a>
+                            <a href="https://food.bolt.eu/sk-SK/401-kosice/p/145853-the-matcha" class="social-icon-logo" title="Bolt Food" target="_blank" rel="noopener noreferrer">
+                                <img src="Images/Bolt.svg" alt="Bolt Logo" class="bolt-logo" width="50" height="50">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>The Matcha Bar</p>
+                    <p>Hlavná Street 42</p>
+                    <p>04001 Kosice, Slovakia</p>
+                    <p>Phone: +421 900 123 456</p>
+                    <p>Email: info@thematcha.sk</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Find Us On Map</h3>
+                    <div id="map-container" class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.315678852658!2d21.26018699999999!3d48.71638580000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474139d3c9c9c9c9%3A0x8f8f8f8f8f8f8f8f!2sHlavn%C3%A1%2042%2C%20040%2001%20Ko%C5%A1ice!5e0!3m2!1sen!2ssk!4v1729939200000"
+                                width="300"
+                                height="250"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Matcha Bar Kosice. All rights reserved.</p>
+                <p>Crafted with passion for authentic matcha experience</p>
+                <p>Designed by <a href="https://www.thematcha.sk" style="color: var(--primary-green); text-decoration: none; font-weight: 500;">Danolab</a></p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

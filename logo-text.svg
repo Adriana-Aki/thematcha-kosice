@@ -1,0 +1,30 @@
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'SundayVacayPersonal';
+        src: url('./fonts/SundayVacayPersonal.woff2') format('woff2'),
+             url('./fonts/SundayVacayPersonal.woff') format('woff');
+      }
+      .text-the {
+        font-family: 'SundayVacayPersonal', cursive;
+        font-size: 32px;
+        font-weight: 400;
+        fill: #000000;
+        letter-spacing: 1px;
+      }
+      .text-matcha {
+        font-family: 'SundayVacayPersonal', cursive;
+        font-size: 44px;
+        font-weight: 400;
+        fill: #286E37;
+      }
+    </style>
+  </defs>
+
+  <!-- "THE" text in black -->
+  <text x="20" y="45" class="text-the">THE</text>
+
+  <!-- "MatCha" text in green -->
+  <text x="20" y="100" class="text-matcha">MatCha</text>
+</svg>

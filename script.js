@@ -1,42 +1,147 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+// ============================================
+// Carousel Functionality
+// ============================================
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const carouselItems = document.querySelectorAll('.carousel-item');
+
+let currentIndex = 0;
+const itemWidth = carouselItems[0]?.offsetWidth || 300;
+const gap = 32; // 2rem gap in pixels
+
+function updateCarousel() {
+    carouselItems.forEach((item, index) => {
+        item.classList.remove('active', 'prev', 'next');
+
+        if (index === currentIndex) {
+            item.classList.add('active');
+        } else if (index === (currentIndex - 1 + carouselItems.length) % carouselItems.length) {
+            item.classList.add('prev');
+        } else if (index === (currentIndex + 1) % carouselItems.length) {
+            item.classList.add('next');
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    updateCarousel();
+}
+
+if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+// Auto-advance carousel every 5 seconds
+setInterval(() => {
+    nextSlide();
+}, 5000);
+
+// ============================================
+// Smooth Scrolling for Navigation Links
+// ============================================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+        const targetElement = document.querySelector(targetId);
 
-        if (targetSection) {
-            targetSection.scrollIntoView({
+        if (targetElement) {
+            targetElement.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
+
+            // Update active nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            this.classList.add('active');
         }
     });
 });
 
-// Log when page loads
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Thematcha Kosice website loaded successfully!');
-});
-
-// Example: Add active class to current navigation link
+// ============================================
+// Active Navigation Link on Scroll
+// ============================================
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
-    let current = '';
+    let currentActive = '';
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
         if (window.pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
+            currentActive = section.getAttribute('id');
         }
     });
 
-    document.querySelectorAll('nav a').forEach(link => {
+    document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
+        if (link.getAttribute('href').slice(1) === currentActive) {
             link.classList.add('active');
         }
     });
+});
+
+// ============================================
+// Page Load
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('The Matcha Bar website loaded successfully!');
+
+    // Initialize carousel on load
+    updateCarousel();
+
+    // Trigger initial scroll to update active nav
+    window.dispatchEvent(new Event('scroll'));
+});
+
+// ============================================
+// Touch/Swipe Support for Mobile Carousel
+// ============================================
+let touchStartX = 0;
+let touchEndX = 0;
+
+const carouselWrapper = document.querySelector('.carousel-wrapper');
+
+if (carouselWrapper) {
+    carouselWrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carouselWrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+}
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+            nextSlide();
+        } else {
+            prevSlide();
+        }
+    }
+}
+
+// ============================================
+// Keyboard Navigation
+// ============================================
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+        nextSlide();
+    } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+    }
 });
