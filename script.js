@@ -147,6 +147,36 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ============================================
+// Burger Menu Toggle
+// ============================================
+const burgerMenu = document.getElementById('burgerMenu');
+const navbar = document.getElementById('navbar');
+
+if (burgerMenu && navbar) {
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        navbar.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a nav link
+    const navLinks = navbar.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            navbar.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('header')) {
+            burgerMenu.classList.remove('active');
+            navbar.classList.remove('active');
+        }
+    });
+}
+
+// ============================================
 // Menu Item Image Click Functionality
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
