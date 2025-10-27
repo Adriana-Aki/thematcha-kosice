@@ -947,6 +947,223 @@ header {
     }
 
     .carousel-btn {
+        display: none;
+    }
+
+@media (max-width: 480px) {
+    /* ============================================
+       Mobile Optimization (480px and below)
+       ============================================ */
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    header {
+        padding: 0.5rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--white);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        gap: 0;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .nav-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .video-section {
+        min-height: 350px;
+        padding: 0;
+    }
+
+    .video-container {
+        height: 350px;
+    }
+
+    .logo-side {
+        padding: 1.5rem 1rem;
+        width: 100%;
+    }
+
+    .logo-side .logo {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1rem;
+    }
+
+    .logo-side .logo::before {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo h1.the {
+        font-size: 18px;
+    }
+
+    .logo h1.matcha {
+        font-size: 28px;
+    }
+
+    .logo-description {
+        font-size: 0.75rem;
+        max-width: 250px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-content {
+        gap: 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .about-text p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .carousel-wrapper {
+        height: 300px;
+    }
+
+    .carousel-item img {
+        height: 100%;
+    }
+
+    .carousel-item h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-item .price {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .gallery-item img {
+        height: 120px;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section p {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .social-links {
+        margin-top: 0.8rem;
+    }
+
+    .social-row {
+        gap: 0.8rem;
+    }
+
+    .social-icon,
+    .social-icon-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .wolt-logo,
+    .bolt-logo {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .footer-bottom {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-light);
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .map-container {
+        height: auto;
+    }
+
+    .map-container iframe {
+        width: 100% !important;
+        height: 200px !important;
+    }
+}
+
+/* Additional mobile touch-friendly improvements */
+@media (max-width: 480px) {
+    button, a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.4rem;
+    }
+
+    .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
