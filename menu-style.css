@@ -345,10 +345,27 @@
 
     .header-content .burger-menu {
         margin-left: auto;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .header-content .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         width: 100%;
+        background-color: var(--white);
+        border-top: 1px solid var(--border-light);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar.active {
+        max-height: 300px;
     }
 
     .logo-text {
@@ -356,14 +373,25 @@
     }
 
     .navbar ul {
-        flex-direction: row;
+        flex-direction: column;
         gap: 0;
-        font-size: 0.75rem;
+        text-align: left;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .navbar ul li {
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .navbar ul li:last-child {
+        border-bottom: none;
     }
 
     .nav-link {
-        padding: 0.3rem 0.4rem;
-        font-size: 0.75rem;
+        display: block;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
     }
 
     .menu-hero {

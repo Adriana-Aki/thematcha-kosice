@@ -1024,6 +1024,46 @@ header {
        Mobile Optimization (480px and below)
        ============================================ */
 
+    .carousel-container {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .carousel-wrapper {
+        height: 360px;
+    }
+
+    .carousel-btn {
+        display: block;
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+
+    .carousel-item {
+        padding: 1rem;
+    }
+
+    .carousel-item img {
+        height: 180px;
+    }
+
+    .carousel-item h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.8rem;
+        display: block;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+    }
+
+    .carousel-item .price {
+        font-size: 1rem;
+    }
+
     body {
         font-size: 14px;
         overflow-x: hidden;
