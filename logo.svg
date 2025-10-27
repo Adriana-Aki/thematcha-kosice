@@ -5,21 +5,30 @@
         font-family: 'SundayVacayPersonal';
         src: url('./fonts/SundayVacayPersonal.woff2') format('woff2'),
              url('./fonts/SundayVacayPersonal.woff') format('woff');
+        font-display: swap;
       }
       .logo-text-the {
-        font-family: 'SundayVacayPersonal', cursive;
+        font-family: 'SundayVacayPersonal', cursive, sans-serif;
         font-size: 32px;
         font-weight: 400;
         text-anchor: middle;
         fill: #000000;
         letter-spacing: 1px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        dominant-baseline: central;
       }
       .logo-text-matcha {
-        font-family: 'SundayVacayPersonal', cursive;
+        font-family: 'SundayVacayPersonal', cursive, sans-serif;
         font-size: 48px;
         font-weight: 400;
         text-anchor: middle;
         fill: #286E37;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        dominant-baseline: central;
       }
     </style>
   </defs>
@@ -31,6 +40,6 @@
   <circle cx="140" cy="140" r="110" fill="none" stroke="#000000" stroke-width="3"/>
 
   <!-- Text centered inside circles -->
-  <text x="140" y="120" class="logo-text-the">THE</text>
-  <text x="140" y="170" class="logo-text-matcha">MatCha</text>
+  <text x="140" y="125" class="logo-text-the">THE</text>
+  <text x="140" y="165" class="logo-text-matcha">MatCha</text>
 </svg>

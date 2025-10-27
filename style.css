@@ -22,11 +22,26 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Image Optimization */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Lazy loading images - prevent layout shift */
+img[loading="lazy"] {
+    background-color: #f0f0f0;
+}
+
 body {
-    font-family: 'Calibri', 'ChronicaPro', sans-serif;
+    font-family: 'Calibri', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -112,6 +127,59 @@ body {
     margin-bottom: 2rem;
 }
 
+/* HTML Logo Styling */
+.logo-side .logo {
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--primary-black);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    animation: fadeInRight 0.8s ease-out;
+    position: relative;
+}
+
+.logo-side .logo::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--primary-black);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.logo h1 {
+    font-family: 'SundayVacayPersonal', cursive, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    z-index: 1;
+    position: relative;
+}
+
+.logo h1.the {
+    font-size: 28px;
+    color: var(--primary-black);
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.logo h1.matcha {
+    font-size: 42px;
+    color: var(--primary-green);
+    line-height: 1;
+}
+
 .logo-description {
     font-size: 1.1rem;
     color: var(--text-light);
@@ -141,6 +209,35 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
+}
+
+/* Hide video controls - Cross-browser support */
+.intro-video {
+    pointer-events: none; /* Prevent any interaction */
+}
+
+.intro-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.intro-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.intro-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.intro-video::-moz-media-controls {
+    display: none !important;
+}
+
+.intro-video::-ms-media-controls {
+    display: none !important;
+}
+
+video {
+    pointer-events: none;
 }
 
 @keyframes fadeInLeft {
@@ -202,12 +299,14 @@ header {
 }
 
 .logo-text {
-    font-family: 'SundayVacayPersonal', sans-serif;
+    font-family: 'SundayVacayPersonal', cursive, sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: #000000;
     display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .logo-matcha {
@@ -229,10 +328,13 @@ header {
 .nav-link {
     color: var(--text-dark);
     text-decoration: none;
+    font-family: 'ChronicaPro', sans-serif;
     font-weight: 500;
     font-size: 1rem;
     transition: var(--transition);
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .nav-link:hover,
@@ -302,7 +404,9 @@ header {
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: 3px;
-    font-family: 'SundayVacayPersonal', sans-serif;
+    font-family: 'SundayVacayPersonal', cursive, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .tagline {
@@ -340,8 +444,10 @@ header {
     margin-bottom: 3rem;
     position: relative;
     padding-bottom: 1rem;
-    font-family: 'ChronicaPro', sans-serif;
-    font-weight: 700;
+    font-family: 'SundayVacayPersonal', cursive, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .section-title::after {
@@ -493,10 +599,12 @@ header {
 }
 
 .matcha-brand {
-    font-family: 'SundayVacayPersonal', sans-serif;
+    font-family: 'SundayVacayPersonal', cursive, sans-serif;
     color: var(--primary-green);
-    font-weight: 700;
+    font-weight: 400;
     margin-right: 0.3rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .carousel-item p {
@@ -575,6 +683,10 @@ header {
     background-color: var(--primary-black);
     color: var(--white);
     padding: 3rem 2rem 1rem;
+    font-family: 'ChronicaPro', sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .footer-content {
@@ -590,12 +702,18 @@ header {
     margin-bottom: 1.5rem;
     border-bottom: 2px solid var(--primary-green);
     padding-bottom: 0.5rem;
+    font-family: 'ChronicaPro', sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .footer-section p {
     color: #cccccc;
     margin-bottom: 0.8rem;
     line-height: 1.8;
+    font-family: 'ChronicaPro', sans-serif;
+    font-weight: 500;
 }
 
 .map-container {
@@ -620,6 +738,8 @@ header {
     color: #999999;
     font-size: 0.9rem;
     margin: 0.3rem 0;
+    font-family: 'ChronicaPro', sans-serif;
+    font-weight: 500;
 }
 
 /* Social Links */

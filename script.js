@@ -145,3 +145,25 @@ document.addEventListener('keydown', (e) => {
         prevSlide();
     }
 });
+
+// ============================================
+// Menu Item Image Click Functionality
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const menuImages = document.querySelectorAll('.menu-item-image');
+    menuImages.forEach(image => {
+        if (!image.hasAttribute('onclick')) {
+            image.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                const title = this.closest('.menu-item').querySelector('h3').textContent;
+                const price = this.closest('.menu-item').querySelector('.menu-price').textContent;
+                const imgSrc = img.src;
+
+                // Call the openImageModal function from menu.html
+                if (typeof openImageModal !== 'undefined') {
+                    openImageModal(imgSrc, title, price);
+                }
+            });
+        }
+    });
+});
