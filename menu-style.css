@@ -492,15 +492,17 @@
 
     .social-links {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        align-items: center;
     }
 
     .social-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.8rem;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .social-icon,
