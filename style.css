@@ -1034,7 +1034,7 @@ header {
     }
 
     .carousel-wrapper {
-        height: 500px;
+        height: 350px;
     }
 
     .carousel-btn {
@@ -1046,17 +1046,17 @@ header {
 
     .carousel-item {
         padding: 0.8rem;
-        max-width: 85vw !important;
+        max-width: 80vw !important;
         max-height: none !important;
     }
 
     .carousel-item img {
-        height: 120px;
-        margin-bottom: 0.8rem;
+        height: 100px;
+        margin-bottom: 0.6rem;
     }
 
     .carousel-item h3 {
-        font-size: 0.85rem !important;
+        font-size: 0.95rem !important;
         margin-bottom: 0.3rem !important;
         color: var(--primary-green) !important;
         display: block !important;
@@ -1064,6 +1064,7 @@ header {
         overflow: visible !important;
         white-space: normal !important;
         word-wrap: break-word !important;
+        line-height: 1.2 !important;
     }
 
     .carousel-item h3 span {
@@ -1076,7 +1077,7 @@ header {
 
     .menu-header {
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     body {
