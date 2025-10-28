@@ -554,7 +554,7 @@ header {
 .menu-header {
     text-align: center;
     margin-bottom: 2rem;
-    margin-top: 5rem;
+    margin-top: -2rem;
 }
 
 .btn-view-menu {
@@ -588,7 +588,7 @@ header {
     flex: 1;
     overflow: hidden;
     position: relative;
-    height: 400px;
+    height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -990,7 +990,7 @@ header {
     }
 
     .carousel-wrapper {
-        height: 350px;
+        height: 420px;
     }
 
     .carousel-item {
@@ -1030,7 +1030,7 @@ header {
     }
 
     .carousel-wrapper {
-        height: 360px;
+        height: 480px;
     }
 
     .carousel-btn {
@@ -1058,10 +1058,6 @@ header {
         display: block;
         margin-bottom: 0.5rem;
         line-height: 1.3;
-    }
-
-    .carousel-item .price {
-        font-size: 1rem;
     }
 
     body {
@@ -1141,11 +1137,13 @@ header {
         top: 100%;
         left: 0;
         right: 0;
+        width: 100%;
         background-color: var(--white);
         border-top: 1px solid var(--border-light);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        z-index: 999;
     }
 
     .navbar.active {
@@ -1153,6 +1151,7 @@ header {
     }
 
     .navbar ul {
+        display: flex;
         flex-direction: column;
         gap: 0;
         text-align: left;
@@ -1250,10 +1249,6 @@ header {
 
     .carousel-item p {
         display: none;
-    }
-
-    .carousel-item .price {
-        font-size: 1rem;
     }
 
     .gallery-grid {
