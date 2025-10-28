@@ -680,7 +680,7 @@ header {
 }
 
 .price {
-    display: inline-block;
+    display: none;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-green);
@@ -1034,7 +1034,7 @@ header {
     }
 
     .carousel-wrapper {
-        height: 400px;
+        height: 500px;
     }
 
     .carousel-btn {
@@ -1045,24 +1045,33 @@ header {
     }
 
     .carousel-item {
-        padding: 1rem;
-        max-width: 280px !important;
+        padding: 0.8rem;
+        max-width: 85vw !important;
+        max-height: none !important;
     }
 
     .carousel-item img {
-        height: 140px;
+        height: 120px;
+        margin-bottom: 0.8rem;
     }
 
     .carousel-item h3 {
-        font-size: 0.9rem;
-        margin-bottom: 0.4rem;
+        font-size: 0.85rem !important;
+        margin-bottom: 0.3rem !important;
+        color: var(--primary-green) !important;
+        display: block !important;
+        visibility: visible !important;
+        overflow: visible !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
+    .carousel-item h3 span {
+        display: inline !important;
     }
 
     .carousel-item p {
-        font-size: 0.75rem;
-        display: block;
-        margin-bottom: 0.4rem;
-        line-height: 1.2;
+        display: none !important;
     }
 
     .menu-header {
@@ -1252,15 +1261,6 @@ header {
         height: 100%;
     }
 
-    .carousel-item h3 {
-        font-size: 1rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .carousel-item p {
-        display: none;
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -1394,10 +1394,6 @@ header {
     .navbar ul {
         gap: 0.3rem;
         font-size: 0.9rem;
-    }
-
-    .carousel-item h3 {
-        font-size: 1.1rem;
     }
 
     .price {

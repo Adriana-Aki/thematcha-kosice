@@ -408,6 +408,20 @@
         text-decoration: none;
     }
 
+    .carousel-item h3 {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.3rem !important;
+        display: block !important;
+    }
+
+    .carousel-item p {
+        display: none !important;
+    }
+
+    .carousel-item .price {
+        display: none !important;
+    }
+
     .menu-hero {
         padding: 1.5rem 1rem;
     }
@@ -422,7 +436,7 @@
     }
 
     .menu-favorites {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1rem 0 1rem;
     }
 
     .section-title {
