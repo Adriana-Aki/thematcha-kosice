@@ -1030,11 +1030,11 @@ header {
     }
 
     .carousel-container {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 
     .carousel-wrapper {
-        height: 550px;
+        height: 400px;
     }
 
     .carousel-btn {
@@ -1046,22 +1046,23 @@ header {
 
     .carousel-item {
         padding: 1rem;
+        max-width: 280px !important;
     }
 
     .carousel-item img {
-        height: 180px;
+        height: 140px;
     }
 
     .carousel-item h3 {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
     }
 
     .carousel-item p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         display: block;
-        margin-bottom: 0.5rem;
-        line-height: 1.3;
+        margin-bottom: 0.4rem;
+        line-height: 1.2;
     }
 
     .menu-header {
